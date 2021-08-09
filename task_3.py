@@ -79,10 +79,11 @@ class RandomFileTest(BaseTest):
         os.remove(RandomFileTest.test_file)
 
 
-log_file = 'log.txt'
-home_dir = expanduser("~")
-case_1 = FileListTest(tc_id=2, name='TestCase2')
-case_1.execute()
+log_file = 'log.txt'    # Определяем путь файла для логгирования(опять, же можно было использовать модуль, но сделаем ручками)
+home_dir = expanduser("~")  # Интересный способ с просторов, как определить домашнюю директорию "на всех платформах"
 
-case_2 = RandomFileTest(tc_id=3, name='Ha-Ha')
-case_2.execute()
+test_case_1 = FileListTest(tc_id=1, name='FileListTest_case')
+test_case_1.execute()
+
+test_case_2 = RandomFileTest(tc_id=2, name='RandomFileTest_case')
+test_case_2.execute()
