@@ -20,16 +20,6 @@ def hash_file(filename, enc_type):
     return h.hexdigest()
 
 
-"""
-file_test = os.path.join("C:\\Users\\Marat\\Pictures\\test_files\\file_02.txt")
-file_test1 = os.path.join("C:\\Users\\Marat\\Pictures\\test_files\\file_03.cfg")
-file_test2 = os.path.join("C:\\Users\\Marat\\Pictures\\test_files\\file_04.bin")
-
-print(hash_file(file_test, 'md5'))
-print(hash_file(file_test1, 'md5'))
-print(hash_file(file_test2, 'sha1'))
-"""
-
 try:
     input_file = argv[1]
     path_to_files = argv[2]
